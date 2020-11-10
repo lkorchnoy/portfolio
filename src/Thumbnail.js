@@ -5,12 +5,12 @@ import './App.css';
 export default function Thumbnail(props) {
     return (
         <div className="project">
-            <Link to="">
+            <Link to={props.link}>
                 <div className="project-image">
-                    <img src="" alt="Project Image" />
+                    <img src={props.image} alt="Project Image" />
                 </div>
-                <div className="project-title">Ordinary Startups</div>
-                <div className="project-category">""</div>
+                <div className="project-title">{props.title}</div>
+                <div className="project-category">{props.category}</div>
             </Link>
         </div>
     );
