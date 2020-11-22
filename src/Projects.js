@@ -23,7 +23,7 @@ export default function Projects() {
             </Card.Text>
           </Card.Body>
           <Card.Body>
-    <Card.Link href="https://github.com/lkorchnoy/ordinary-startups.git">Code</Card.Link>
+    <Card.Link href="https://github.com/lkorchnoy/ordinary-startups.git">GitHub</Card.Link>
     <Card.Link href="https://youtu.be/YbFmj_zaPo4">Demo</Card.Link>
     <Card.Link href="#">Live Site</Card.Link>
 
@@ -33,30 +33,39 @@ export default function Projects() {
           </Card.Footer>
         </Card>
         <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
+          <Card.Img variant="top" src={Image2} alt="Perfect plant image" />
           <Card.Body>
             <Card.Title>Perfect Plant</Card.Title>
             <Card.Text>
-              This card has supporting text below as a natural lead-in to additional
-              content.{' '}
+            This app is based on a personality test which suggests the perfect indoor plant for every type of personality.
             </Card.Text>
           </Card.Body>
+          <Card.Body>
+    <Card.Link href="https://github.com/lkorchnoy/perfect_plant.git">GitHub</Card.Link>
+    <Card.Link href="https://youtu.be/y7hLYzzihH4">Demo</Card.Link>
+    <Card.Link href="#">Live Site</Card.Link>
+
+  </Card.Body>
           <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
+            <small className="text-muted">Javascript | Ruby on Rails | Bootstrap 4</small>
           </Card.Footer>
         </Card>
         <Card>
-          <Card.Img variant="top" src="holder.js/100px160" />
+          <Card.Img variant="top" src={Image3} alt="Free time image" />
           <Card.Body>
             <Card.Title>Free Time</Card.Title>
             <Card.Text>
-              This is a wider card with supporting text below as a natural lead-in to
-              additional content. This card has even longer content than the first to
-              show that equal height action.
+            App for creating and sharing music videos.
             </Card.Text>
           </Card.Body>
+          <Card.Body>
+    <Card.Link href="https://github.com/lkorchnoy/react_project.git">GitHub</Card.Link>
+    <Card.Link href="https://youtu.be/2Y70BMHmHe8">Demo</Card.Link>
+    <Card.Link href="#">Live Site</Card.Link>
+
+  </Card.Body>
           <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
+            <small className="text-muted">React | Redux | Ruby on Rails</small>
           </Card.Footer>
         </Card>
       </CardDeck>
