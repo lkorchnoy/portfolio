@@ -1,39 +1,42 @@
 import React from 'react';
-import logo from './logo.svg';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-import Projects from './Projects';
-import About from './About';
-import Blogs from './Blogs';
-import Skills from './Skills';
-import Contact from './Contact';
 import './App.css';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navigation from './Navigation'
+import { Button, Navbar, Container, CardImg } from 'react-bootstrap';
 
+
+import Projects from './Projects'
+
+
+// import { motion } from "framer-motion"
 function App() {
   return (
     <BrowserRouter>
     <Switch>
-    <div className="App">
-      
-      <Route exact path="/" component={Projects} />
-      <Route path="/about" component={About} />
-      <Route path="/blogs" component={Blogs} />
-      <Route path="/skills" component={Skills} />
-      <Route path="/contact" component={Contact} />
-      
-      <div className="navigation">
-       <img src={logo} className="logo" alt="Image"/>
-       <div className="navigation-sub">
-        <Link to="/" className="item">Projects</Link> 
-        <Link to="/about" className="item">About</Link>
-        <Link to="/blogs" className="item">Blogs</Link>
-        <Link to="/skills" className="item">Skills</Link>
-        <Link to="/contact" className="item">Contact</Link>
-        </div>
-      </div>
-    </div>
-    </Switch>
+    <Navbar expand="lg" variant="light" bg="light">
+  <Container>
+    
+    <Navbar.Brand href="/about">About</Navbar.Brand>
+    <Navbar.Brand href="/projects">Projects</Navbar.Brand>
+    <Navbar.Brand href="/skills">Skills</Navbar.Brand>
+    <Navbar.Brand href="/blogs">Blogs</Navbar.Brand>
+    <Navbar.Brand href="/contact">Contact</Navbar.Brand>
+    <Navbar.Brand href="/social">Let's Chat</Navbar.Brand>
+    
+    
+    
+    
+  </Container>
+
+</Navbar>
+</Switch>
     </BrowserRouter>
-  );
+ 
+
+
+
+     )
 }
 
 export default App;

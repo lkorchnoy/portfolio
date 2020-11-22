@@ -1,43 +1,31 @@
 import React from 'react'
 import Thumbnail from './Thumbnail';
 import './App.css';
-import { motion } from "framer-motion"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button, Card } from 'react-bootstrap';
+
 
 import Image1 from './img1.jpg';
 import Image2 from './img2.jpg';
 import Image3 from './img3.jpg';
 
 
-export default function Projects(props) {
+export default function Projects() {
    
     return (
-        
-        <div>
-            <h1>Projects</h1>
-
-            <Thumbnail
-            link="/github"
-            img src={Image1}
-            title="Ordinary Startups"
-            category="App"
-            />
-            
-
-            <Thumbnail
-            link="/github"
-            img src={Image2}
-            title="Perfect Plant"
-            category="App"
-            />
-
-            <Thumbnail
-            link="/github"
-            img src={Image3}
-            title="Free Time"
-            category="App"
-            />
-
-
-        </div>
+        <Card>
+    <Card.Img variant="top" src="holder.js/100px160" />
+    <Card.Body>
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content. This content is a little bit longer.
+      </Card.Text>
+    </Card.Body>
+    <Card.Footer>
+      <small className="text-muted">Last updated 3 mins ago</small>
+    </Card.Footer>
+  </Card> 
+       
     )
 }
