@@ -13,13 +13,16 @@ import Image3 from './img3.jpg';
 export default function Projects() {
    
     return (
+      <div class="wrapper">
+        
         <CardDeck>
+        
         <Card>
           <Card.Img variant="top" src={Image1} alt="Startups image" />
           <Card.Body>
             <Card.Title>Ordinary Startups</Card.Title>
             <Card.Text>
-            App features disrupt startups with avant-garde concepts and high technology that provide easy solutions for everyday tasks.
+            App features startups with avant-garde concepts and high tech that provide easy solutions for everyday tasks.
             </Card.Text>
           </Card.Body>
           <Card.Body>
@@ -55,7 +58,7 @@ export default function Projects() {
           <Card.Body>
             <Card.Title>Free Time</Card.Title>
             <Card.Text>
-            App for creating and sharing music videos.
+            App for creating and sharing music videos. Create your own playlist or share your music video.
             </Card.Text>
           </Card.Body>
           <Card.Body>
@@ -69,6 +72,7 @@ export default function Projects() {
           </Card.Footer>
         </Card>
       </CardDeck>
+      </div>
       
     )
 }

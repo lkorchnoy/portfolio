@@ -7,18 +7,19 @@ import { Button, Navbar, Container, CardDeck } from 'react-bootstrap';
 
 import About from './About';
 import Projects from './Projects'
+import Skills from './Skills'
+import Blogs from './Blogs'
+import Contact from './Contact'
 
 
 // import { motion } from "framer-motion"
 function App() {
   return (
-    
+   
     <BrowserRouter>
     <Switch>
-      
     <Navbar expand="lg" variant="light" bg="light">
-  <Container>
-  
+    <Container>
     <Navbar.Brand href="/about">About</Navbar.Brand>
     <Navbar.Brand href="/projects">Projects</Navbar.Brand>
     <Navbar.Brand href="/skills">Skills</Navbar.Brand>
@@ -28,8 +29,15 @@ function App() {
   </Container>
    </Navbar>
     </Switch>
-             <About/>
+            
+        <h2>Ludmila Korchnoy</h2>
+            <About/>
             <Projects/>
+            <Skills/>
+            <Blogs/>
+            <Contact/>
+            
+
      </BrowserRouter>
      
 
