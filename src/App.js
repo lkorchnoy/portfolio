@@ -1,24 +1,29 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navigation from './Navigation'
-import { Button, Navbar, Container, CardDeck } from 'react-bootstrap';
 
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import { Button, Navbar, Container, CardDeck } from 'react-bootstrap';
+import Navigation from './Navigation'
+
+
+import Image from './Image'
 import About from './About';
 import Projects from './Projects'
 import Skills from './Skills'
 import Blogs from './Blogs'
 import Contact from './Contact'
+import { motion } from 'framer-motion';
 
 
-// import { motion } from "framer-motion"
+
 function App() {
   return (
    
-    <BrowserRouter>
+    <Router>
     <Switch>
-    <Navbar expand="lg" variant="light" bg="light">
+    <Navbar expand="lg" variant="light" bg="light">          
     <Container>
     <Navbar.Brand href="/about">About</Navbar.Brand>
     <Navbar.Brand href="/projects">Projects</Navbar.Brand>
@@ -29,24 +34,21 @@ function App() {
   </Container>
    </Navbar>
     </Switch>
+    
             
-        <h2>Ludmila Korchnoy</h2>
+        <h1>Hi, I'm Ludmila Korchnoy.</h1> 
+        <h2>Software Developer | Innovator | Forever Learner</h2>
+            <Image/>
             <About/>
             <Projects/>
             <Skills/>
+            
             <Blogs/>
             <Contact/>
             
-
-     </BrowserRouter>
-     
-
-
- 
-
-
-
-     )
+          </Router>
+   
+    )
 }
 
 export default App;

@@ -24,12 +24,27 @@ nav.navbar {
   }
 }
 
+h1 {
+  text-align: center;
+  color: #857a7a;
+  text-shadow: 0 1px 0 black;
+  font-weight: 700;
+}
+
 h2 {
   text-align: center;
   color: #857a7a;
   text-shadow: 0 1px 0 black;
   font-weight: 700;
 }
+
+h3 {
+  text-align: center;
+  color: #857a7a;
+  text-shadow: 0 1px 0 black;
+  font-weight: 700;
+}
+
 body {
   background-color: transparent !important;
 }
@@ -52,26 +67,30 @@ body {
   align-items: center;
 }
 
-
-  /* background-repeat: no-repeat, repeat;
-  background-position: center; 
-  background-size: cover;
-  padding-top: 50px;
-  font-weight: bold;
-  margin-top: 100px;
-  margin-bottom:100px;
-  padding: 100px;
-  border-radius: 50px;
-  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); */
- 
- 
-.jumbotron .banner h5 {
+/* .jumbotron .banner h5 {
   text-align: center;
   color: #ffffff;
   text-shadow: 0 1px 0 black;
   font-weight: 700;
   padding: 10px;
   
+}  */
+
+.container h5 {
+  text-align: center;
+  color: #696969;
+  /* text-shadow: 0 1px 0 black; */
+  font-weight: 500;
+  padding: 10px;
+
+}
+
+.span h5 {
+  text-align: center;
+  color: #696969;
+  /* text-shadow: 0 1px 0 black; */
+  font-weight: 500;
+  padding: 10px;
 }
 
 /* .embed-responsive .card-img-top {
@@ -96,6 +115,42 @@ body {
   color: black
   
 }
+.block span {
+/* margin: 0 1rem; */
+/* margin-right: 10%; */
+margin: 30px 50px 20px;
+  /* vertical-align: middle; */
+                
+  /* margin-left: 0.3rem; */
+}
+/* .icons {
+  display: center;
+  justify-content: space-between;
+  align-items: center;
+} */
+/* .grid {
+  whileHover={{
+  justify-content: space-between;
+  align-items: center;
+  position: 'relative',
+                zIndex: 1,
+                background: 'white',
+                scale: [1, 1.4, 1.2],
+                rotate: [0, 10, -10, 0],
+                filter: [
+                    'hue-rotate(0) contrast(100%)',
+                    'hue-rotate(360deg) contrast(200%)',
+                    'hue-rotate(45deg) contrast(300%)',
+                    'hue-rotate(0) contrast(100%)'
+                ]
+                transition: {
+                    duration: .2
+                }
+            
+}}
+} */
+
+
 
 
 

@@ -1,8 +1,8 @@
 import React from 'react'
-import Thumbnail from './Thumbnail';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, CardDeck, Card } from 'react-bootstrap';
+
 
 
 import Image1 from './img1.jpg';
@@ -14,10 +14,10 @@ export default function Projects() {
    
     return (
       <div class="wrapper">
-        
+        <h3>Projects</h3>
+
         <CardDeck>
-        
-        <Card>
+          <Card>
           <Card.Img variant="top" src={Image1} alt="Startups image" />
           <Card.Body>
             <Card.Title>Ordinary Startups</Card.Title>

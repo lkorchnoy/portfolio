@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Projects from './Projects';
 import About from './About';
 import Blogs from './Blogs';
@@ -11,22 +11,24 @@ function Navigation() {
     return (
         
            
-    <BrowserRouter>
+    <Router>
     <Switch>
     <div className="App">
       
-      <Route exact path="/" component={Projects} />
+      {/* <Route exact path="/" component={Projects} />
       <Route path="/about" component={About} />
       <Route path="/blogs" component={Blogs} />
       <Route path="/skills" component={Skills} />
-      <Route path="/contact" component={Contact} />
+      <Route path="/contact" component={Contact} /> */}
       
       <div className="navigation">
-      {/* <img src={logo} className="logo" alt="Image"/> */}
+      
        <div className="navigation-sub">
         
-        <Link to="/about" className="item">About</Link>
-        <Link to="/projects" className="item">Projects</Link>
+        {/* <Link to="/about" className="item">About</Link> */}
+        <Route exact path="/about" src={About} />
+        {/* <Link to="/projects" className="item">Projects</Link> */}
+        <Route exact path="/projects" src={Projects} />
         <Link to="/skills" className="item">Skills</Link>
         <Link to="/blogs" className="item">Blogs</Link>
         <Link to="/contact" className="item">Contact</Link>
@@ -36,7 +38,7 @@ function Navigation() {
       
     </div>
     </Switch>
-    </BrowserRouter>
+    </Router>
   );
 } 
 
