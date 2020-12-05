@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { SiRedux, SiRails} from 'react-icons/si'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faJsSquare } from '@fortawesome/free-brands-svg-icons'
 import { faHtml5, faReact, faGithub, faCss3, faBootstrap, faNodeJs } from '@fortawesome/free-brands-svg-icons'
@@ -13,12 +13,18 @@ function Skills() {
     
      return (
           <motion.div class="block"
-  
-        whileHover={{
+          
+          whileHover={{
             scale: 1.2,
             transition: { duration: 1 },
               }}
-        whileTap={{ scale: 0.9 }}>
+        whileTap={{ scale: 0.9 }}
+            
+          animate={{
+            scale: [1, 2, 2, 1, 1],
+            rotate: [0, 0, 270, 270, 0],
+            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+          }}>
 
 
         
@@ -30,13 +36,15 @@ function Skills() {
             
             
           <span><FontAwesomeIcon icon={faHtml5} color="red" size="3x" /></span>
+          <span><FontAwesomeIcon icon={faCss3} color="blue" size="3x" /></span>
           <span><FontAwesomeIcon icon={faReact} color="skyblue" size="3x" /></span>
           <span><FontAwesomeIcon icon={faJsSquare} color="yellow" size="3x" /></span>
-          <span><FontAwesomeIcon icon= {faGithub} color="black" size="3x" /></span>
-          <span><FontAwesomeIcon icon={faCss3} color="blue" size="3x" /></span>
-          <span><FontAwesomeIcon icon={faBootstrap} color="darkmagenta" size="3x" /></span>
           <span><FontAwesomeIcon icon={faGem} color="red" size="2x" transform={{ rotate: 318 }} /></span>
-           
+          <span><SiRedux color="purple" size="2rem" /></span>
+          <span><SiRails color="red" size="4rem"/></span>
+          <span><FontAwesomeIcon icon={faBootstrap} color="darkmagenta" size="3x" /></span>
+          <span><FontAwesomeIcon icon= {faGithub} color="black" size="3x" /></span>
+         
            
         </motion.div>
             

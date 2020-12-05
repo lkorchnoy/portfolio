@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, CardDeck, Card } from 'react-bootstrap';
-
+import { motion } from 'framer-motion'
 
 
 import Image1 from './img1.jpg';
@@ -13,8 +13,9 @@ import Image3 from './img3.jpg';
 export default function Projects() {
    
     return (
-      <div class="wrapper">
-        <h3>Projects</h3>
+      
+       <div class="wrapper">
+       <h3>Projects</h3>
 
         <CardDeck>
           <Card>
@@ -72,7 +73,7 @@ export default function Projects() {
           </Card.Footer>
         </Card>
       </CardDeck>
-      </div>
+     </div>
       
     )
 }

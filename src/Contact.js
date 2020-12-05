@@ -1,28 +1,28 @@
 import React from 'react'
+ import { FaFileDownload} from 'react-icons/fa'
+import ReactPDF from '@react-pdf/renderer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faMedium, faYoutube } from '@fortawesome/free-brands-svg-icons'
-import { faEnvelope, faDownload } from '@fortawesome/free-solid-svg-icons'
+ import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons'
+import Resume from './resume.pdf'
 import { motion } from 'framer-motion'
 
 function Contact() {
     return (
-        <motion.div class="block"
+        <div class="block">
   
-        whileHover={{
-            scale: 1.2,
-            transition: { duration: 1 },
-              }}
-        whileTap={{ scale: 0.9 }}>
+        
         
             <h3>Let's Chat</h3>
-            <i class="fab falinkedin"></i>
-            <span><FontAwesomeIcon icon={faLinkedin} color="grey" size="5x" /></span>
-            <span><FontAwesomeIcon icon={faGithub} color="grey" size="5x" /></span>
-            <span><FontAwesomeIcon icon={faMedium} color="grey" size="5x" /></span>
-            <span><FontAwesomeIcon icon={faEnvelope} color="grey" size="5x" /></span>
-            <span><FontAwesomeIcon icon={faDownload} color="grey" size="5x" /></span>
-            <span><FontAwesomeIcon icon={faYoutube} color="grey" size="5x" /></span>
-        </motion.div>
+            
+            <span><FontAwesomeIcon icon={faLinkedin} color="lightblack" size="3x" /></span>
+            <span><FontAwesomeIcon icon={faGithub} color="black" size="3x" /></span>
+            <span><FontAwesomeIcon icon={faMedium} color="black" size="3x" /></span>
+            <span><FontAwesomeIcon icon={faEnvelope} color="black" size="3x" /></span>
+            {/* <span><FontAwesomeIcon icon={faFilePdf} color="orange" size="2x" src={Resume} alt="My Resume" /></span> */}
+            
+            <span><FontAwesomeIcon icon={faYoutube} color="black" size="3x" /></span>
+        </div>
     )
 }
 
