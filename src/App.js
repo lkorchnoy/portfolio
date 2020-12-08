@@ -77,7 +77,7 @@ function App () {
       </AnimatePresence>
   <motion.p variants={childVariants}>
 
-        Software Developer | Aspiring Innovator | Forever Learner</motion.p>
+        Software Developer | Designer</motion.p>
         </motion.div>
             <Image/>
             <About/>

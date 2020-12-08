@@ -13,9 +13,26 @@ import Image3 from './img3.jpg';
 export default function Projects() {
    
     return (
+      <div class="container">
+        <motion.div initial="hidden" animate="visible" variants={{
+            hidden: {
+              scale: .8,
+              opacity: 0
+            },
+            visible: {
+              scale: 2,
+              opacity: 1,
+              transition: {
+                delay: .6
+              }
+            },
+          }}>
+               <div class="wrapper"></div>
+              <h3 className="title">Projects</h3>
+        </motion.div>
       
-       <div class="wrapper">
-       <h3>Projects</h3>
+      
+       
 
         <CardDeck>
           <Card>

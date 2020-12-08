@@ -11,17 +11,17 @@ function Navigation() {
     return (
         
            
-    <Router>
+    
     <Switch>
     <div className="App">
       
-      {/* <Route exact path="/" component={Projects} />
+      <Route exact path="/"> <Projects /> </Route>
       <Route path="/about" component={About} />
       <Route path="/blogs" component={Blogs} />
       <Route path="/skills" component={Skills} />
-      <Route path="/contact" component={Contact} /> */}
+      <Route path="/contact" component={Contact} /> 
       
-      <div className="navigation">
+      {<div className="navigation">
       
        <div className="navigation-sub">
         
@@ -34,11 +34,11 @@ function Navigation() {
         <Link to="/contact" className="item">Contact</Link>
         <Link to="/social" className="item">Social Media</Link>
         </div>
-      </div>
+      </div>}
       
     </div>
     </Switch>
-    </Router>
+    
   );
 } 
 
