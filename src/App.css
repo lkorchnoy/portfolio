@@ -49,6 +49,15 @@ h3 {
   color: #857a7a;
   text-shadow: 0 1px 0 black;
   font-weight: 700;
+  
+}
+
+h4 {
+  text-align: center;
+  color: #857a7a;
+  text-shadow: 0 1px 0 black;
+  font-weight: 700;
+  
 }
 
 body {

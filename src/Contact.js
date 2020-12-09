@@ -25,7 +25,7 @@ function Contact() {
             },
           }}>
               
-              <h3 className="title">Let's Chat</h3>
+              <h3 className="title">Let's Chat</h3><br></br>
         </motion.div>
        
   

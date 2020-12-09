@@ -79,13 +79,12 @@ function App () {
 
         Software Developer | Designer</motion.p>
         </motion.div>
-            <Image/>
-            <About/>
-            <Projects/>
-            <Skills/>
-            
-            <Blogs/>
-            <Contact/>
+            <Image/><br></br>
+            <About/><br></br>
+            <Projects/><br></br>
+            <Skills/><br></br>
+            <Blogs/><br></br>
+            <Contact/><br></br>
            
             
             </Router>

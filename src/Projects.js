@@ -28,7 +28,7 @@ export default function Projects() {
             },
           }}>
                <div class="wrapper"></div>
-              <h3 className="title">Projects</h3>
+              <h3 className="title">Projects</h3><br></br>
         </motion.div>
       
       

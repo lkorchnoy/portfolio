@@ -21,13 +21,12 @@ function About() {
             },
           }}>
               
-              <h3 className="title">About Me</h3>
+              <h3 className="title">About Me</h3><br></br>
         </motion.div>
         <AnimatePresence>
       <h5>
-        I'm a Full Stack Web Developer with a passion for creativity, innovation and solving problems through analytics.
-        My interest in programming began when I created my website focused on startups in the tech industry. 
-        My creativity and motivation to learn as well as my past work experience in customer service has enabled me to transcend being a software engineer with the compelling desire to build projects that create impact in society. 
+        My interest in programming began when I created my website focused on startups in the tech industry. I love technology and it's latest developments.
+        With strong problem-solving skills and my background in customer experience I'm passionate about creating high performance projects with clean, beautiful code and high-end customer experience.
         I love spending time with my family I have five children, I enjoy traveling, photography, coffee and a great movie. 
      </h5>
      </AnimatePresence>
