@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
+
 import './App.css';
+import Routing from './Routing'
+ import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+ import 'bootstrap/dist/css/bootstrap.min.css'; 
+ import { Button, Nav, Navbar, Container, NavDropdown, Form, FormControl } from 'react-bootstrap';
+/* import { Button, Naimport { Button, Nav, Container } from 'react-bootstrap';vbar, Nav, NavItem, Container } from 'react-bootstrap'; */
+/* import { LinkContainer } from 'react-router-bootstrap' */
+//import Navbar from './Navbar'
 
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import { Button, Navbar, Container, CardDeck } from 'react-bootstrap';
-import Navigation from './Navigation'
-
-
+import Home from './Home'
 import Image from './Image'
-import About from './About';
+import About from './About'
 import Projects from './Projects'
 import Skills from './Skills'
 import Blogs from './Blogs'
 import Contact from './Contact'
-// import { motion } from 'framer-motion';
+
 import { motion, AnimatePresence, useSpring, useMotionValue, useTransform } from "framer-motion"
 
 
@@ -50,22 +52,21 @@ function App () {
      setShowTitle(false);
    }, 6000);
   return (
-    
-    
-  
-    <Router>
-    <Switch>
-    <Navbar expand="lg" variant="light" bg="light">          
-    <Container>
+    <div className="Header">
+     
+     
+        
+  <Navbar expand="lg" variant="light" bg="light"> 
+    <Container> 
+    <Navbar.Brand href="/home">Home</Navbar.Brand>
     <Navbar.Brand href="/about">About</Navbar.Brand>
     <Navbar.Brand href="/projects">Projects</Navbar.Brand>
     <Navbar.Brand href="/skills">Skills</Navbar.Brand>
     <Navbar.Brand href="/blogs">Blogs</Navbar.Brand>
-    <Navbar.Brand href="/contact">Contact</Navbar.Brand>
-    <Navbar.Brand href="/social">Let's Chat</Navbar.Brand>
-  </Container>
-   </Navbar>
-    </Switch>
+    <Navbar.Brand href="/contact">Let's Chat</Navbar.Brand>
+  </Container>  
+    
+</Navbar>
     <motion.div className="container order"
     variants={containerVariants}
     initial="hidden"
@@ -79,15 +80,16 @@ function App () {
 
         Software Developer | Designer</motion.p>
         </motion.div>
+        <Routing />
             <Image/><br></br>
             <About/><br></br>
             <Projects/><br></br>
             <Skills/><br></br>
             <Blogs/><br></br>
             <Contact/><br></br>
-           
             
-            </Router>
+           </div>
+             
        
     );
   }

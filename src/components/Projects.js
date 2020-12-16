@@ -5,9 +5,9 @@ import { Button, CardDeck, Card } from 'react-bootstrap';
 import { motion } from 'framer-motion'
 
 
-import Image1 from './img1.jpg';
-import Image2 from './img2.jpg';
-import Image3 from './img3.jpg';
+import Image1 from '../img1.jpg';
+import Image2 from '../img2.jpg';
+import Image3 from '../img3.jpg';
 
 
 export default function Projects() {

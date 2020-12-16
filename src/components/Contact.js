@@ -4,7 +4,7 @@ import ReactPDF from '@react-pdf/renderer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faGithub, faMedium, faYoutube } from '@fortawesome/free-brands-svg-icons'
  import { faEnvelope, faFilePdf } from '@fortawesome/free-solid-svg-icons'
-import Resume from './resume.pdf'
+// import Resume from './resume.pdf'
 import { motion } from 'framer-motion'
 import { SiGmail } from 'react-icons/si';
 
