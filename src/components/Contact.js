@@ -7,8 +7,10 @@ import { faLinkedin, faGithub, faMedium, faYoutube } from '@fortawesome/free-bra
 // import Resume from './resume.pdf'
 import { motion } from 'framer-motion'
 import { SiGmail } from 'react-icons/si';
+import { Component } from 'react';
 
-function Contact() {
+const contact = (props) => {
+  
     return (
         <div class="block">
         <motion.div initial="hidden" animate="visible" variants={{
@@ -33,15 +35,16 @@ function Contact() {
         
             
             
-            <span><FontAwesomeIcon icon={faLinkedin} color="lightblack" size="3x" /></span>
-            <span><FontAwesomeIcon icon={faGithub} color="black" size="3x" /></span>
-            <span><FontAwesomeIcon icon={faMedium} color="black" size="3x" /></span>
+            <span><a href="https://www.linkedin.com/in/ludmilakorchnoy/"><FontAwesomeIcon icon={faLinkedin} color="black" size="3x" /></a></span>
+             
+            <span><a href="https://github.com/lkorchnoy"><FontAwesomeIcon icon={faGithub} color="black" size="3x" /></a></span>
+            <span><a href="https://ludmilakorchnoy.medium.com/"><FontAwesomeIcon icon={faMedium} color="black" size="3x" /></a></span>
             <span><FontAwesomeIcon icon={faEnvelope} color="black" size="3x" /></span>
-            {/* <span><FontAwesomeIcon icon={faFilePdf} color="orange" size="2x" src={Resume} alt="My Resume" /></span> */}
+           
             
             <span><FontAwesomeIcon icon={faYoutube} color="black" size="3x" /></span>
         </div>
     )
 }
 
-export default Contact
+export default contact 

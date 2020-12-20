@@ -9,7 +9,7 @@ import Contact from './Contact';
 class Routing extends Component {
     render() {
 return (
-    
+    <div className="wrapper">
     <Router>
     <Switch>
        <Route path='/about' component={About} />
@@ -21,7 +21,7 @@ return (
    
    </Switch>
    </Router>
-
+   </div>
    
     );
 }
