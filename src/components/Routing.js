@@ -5,21 +5,25 @@ import Projects from './Projects';
 import Skills from './Skills';
 import Blogs from './Blogs';
 import Contact from './Contact';
+import Home from './Home'
 
 class Routing extends Component {
     render() {
 return (
     <div className="wrapper">
-    <Router>
+        <Router>
+    {/* <Router basename={process.env.PUBLIC_URL}> */}
+    <Router basename="/portfolio">
+       
     <Switch>
-       <Route path='/about' component={About} />
+       <Route path='/portfolio/src/components/about' component={About} />
        <Route path='/projects' component={Projects} />
        <Route path='/skills' component={Skills} />
        <Route path='/blogs' component={Blogs} />
        <Route path='/contact' component={Contact} />
-   
-   
+       
    </Switch>
+   </Router>
    </Router>
    </div>
    
