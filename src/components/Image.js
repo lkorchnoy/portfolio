@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Jumbotron } from 'react-bootstrap';
 
 import { motion } from 'framer-motion'
-// import { SubscriptionManager } from 'framer-motion/types/utils/subscription-manager';
+
 
 
 

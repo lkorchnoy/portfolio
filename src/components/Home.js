@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 import './App.css';
 
- import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
- import 'bootstrap/dist/css/bootstrap.min.css'; 
+import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
  
 
 
@@ -15,7 +15,7 @@ import Skills from './Skills'
 import Blogs from './Blogs'
 import Contact from './Contact'
 
-import { motion, AnimatePresence, useSpring, useMotionValue, useTransform } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 
 
 

@@ -20,8 +20,6 @@ const Navbar = () => {
     <Container> 
     
     <Navbar.Brand href="/about">About</Navbar.Brand>
-   
-    
     <Navbar.Brand href="/projects">Projects</Navbar.Brand>
     <Navbar.Brand href="/skills">Skills</Navbar.Brand>
     <Navbar.Brand href="/blogs">Blogs</Navbar.Brand>

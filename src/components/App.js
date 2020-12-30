@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 
 import './App.css';
 import Routing from './Routing'
- import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
- import 'bootstrap/dist/css/bootstrap.min.css'; 
- import { Button, Nav, Navbar, Container, NavDropdown, Form, FormControl } from 'react-bootstrap';
-/* import { Button, Naimport { Button, Nav, Container } from 'react-bootstrap';vbar, Nav, NavItem, Container } from 'react-bootstrap'; */
-/* import { LinkContainer } from 'react-router-bootstrap' */
-//import Navbar from './Navbar'
+import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+import { Button, Nav, Navbar, Container, NavDropdown, Form, FormControl } from 'react-bootstrap';
+
 
 import Home from './Home'
 import Image from './Image'
@@ -17,7 +15,7 @@ import Skills from './Skills'
 import Blogs from './Blogs'
 import Contact from './Contact'
 
-import { motion, AnimatePresence, useSpring, useMotionValue, useTransform } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 
 
 
