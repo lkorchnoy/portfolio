@@ -4,7 +4,7 @@ import './App.css';
 import Routing from './Routing'
 import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'; 
-import { Button, Nav, Navbar, Container, NavDropdown, Form, FormControl } from 'react-bootstrap';
+/* import { Button, Nav, Navbar, Container, NavDropdown, Form, FormControl } from 'react-bootstrap'; */
 
 
 import Home from './Home'
@@ -54,7 +54,7 @@ function App () {
      
      
         
-  <Navbar expand="lg" variant="light" bg="light"> 
+  {/* <Navbar expand="lg" variant="light" bg="light"> 
     <Container> 
     <Navbar.Brand href="/home">Home</Navbar.Brand>
     <Navbar.Brand href="/about">About</Navbar.Brand>
@@ -64,21 +64,21 @@ function App () {
     <Navbar.Brand href="/contact">Let's Chat</Navbar.Brand>
   </Container>  
     
-</Navbar>
+</Navbar> */}
     <motion.div className="container order"
     variants={containerVariants}
     initial="hidden"
     animate="visible">
       <AnimatePresence>
       { showTitle && (
-       <motion.h1>Hi, I'm Ludmila Korchnoy!</motion.h1> 
+       <motion.h1>Hi, I'm Lucy!</motion.h1> 
       )}
       </AnimatePresence>
   <motion.p variants={childVariants}>
 
         Software Developer | Designer</motion.p>
         </motion.div>
-        <Routing />
+        
             <Image/><br></br>
             <About/><br></br>
             <Projects/><br></br>
