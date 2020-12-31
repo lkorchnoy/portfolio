@@ -71,7 +71,7 @@ function App () {
     animate="visible">
       <AnimatePresence>
       { showTitle && (
-       <motion.h1>Hi, I'm Lucy</motion.h1> 
+       <motion.h1>Hi, I'm Lucy!</motion.h1> 
       )}
       </AnimatePresence>
   <motion.p variants={childVariants}>
