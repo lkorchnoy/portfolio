@@ -19,8 +19,9 @@ function Skills() {
             scale: 1.2,
             transition: { duration: 1 },
               }}
-        whileTap={{ scale: 0.9 }}>
-            
+          whileTap={{ scale: 0.9 }}>
+
+          
           
 
         
@@ -41,8 +42,8 @@ function Skills() {
           <span><FontAwesomeIcon icon={faBootstrap} color="darkmagenta" size="3x" /></span>
           <span><FontAwesomeIcon icon= {faGithub} color="black" size="3x" /></span>
          
-           
-        </motion.div>
+          </motion.div>    
+        
             
     )}
      

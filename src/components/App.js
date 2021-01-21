@@ -83,6 +83,7 @@ function App () {
             <About/><br></br>
             <Projects/><br></br>
             <Skills/><br></br>
+            <br></br>
             <Blogs/><br></br>
             <Contact/><br></br>
             
