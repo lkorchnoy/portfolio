@@ -27,7 +27,7 @@ const contact = (props) => {
             },
           }}>
               
-              <h3 className="title">Let's Chat</h3><br></br>
+              <h3 className="title">Let's Connect</h3><br></br>
         </motion.div>
        
   
