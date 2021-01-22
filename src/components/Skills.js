@@ -16,7 +16,7 @@ function Skills() {
           <motion.div class="block"
 
           whileHover={{
-            scale: 0.9,
+            scale: 1.5,
             transition: { duration: 1 },
               }}
           whileTap={{ scale: 0.9 }}>

@@ -12,7 +12,7 @@ import { Component } from 'react';
 const contact = (props) => {
   
     return (
-        <div class="block">
+        <div class="wrapper">
         <motion.div initial="hidden" animate="visible" variants={{
             hidden: {
               scale: .8,
@@ -35,9 +35,9 @@ const contact = (props) => {
         
             
             
-            <span><a href="https://www.linkedin.com/in/ludmilakorchnoy/"><FontAwesomeIcon icon={faLinkedin} color="black" size="3x" /></a></span>
+            <span><a href="https://www.linkedin.com/in/ludmilakorchnoy/"><FontAwesomeIcon icon={faLinkedin} color="black" size="3x" /></a></span>{" "}
              
-            <span><a href="https://github.com/lkorchnoy"><FontAwesomeIcon icon={faGithub} color="black" size="3x" /></a></span>
+            <span><a href="https://github.com/lkorchnoy"><FontAwesomeIcon icon={faGithub} color="black" size="3x" /></a></span>{" "} 
             <span><a href="https://ludmilakorchnoy.medium.com/"><FontAwesomeIcon icon={faMedium} color="black" size="3x" /></a></span>
             {/* <span><FontAwesomeIcon icon={faEnvelope} color="black" size="3x" /></span> */}
            
