@@ -122,9 +122,8 @@ body {
   
 }
 .block span {
-
-margin: 30px 50px 20px;
- 
+text-align: center;
+margin: 10px 60px 10px;
 }
 
 .clickableAwesomeFont {
