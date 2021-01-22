@@ -26,8 +26,8 @@ function About() {
         <AnimatePresence>
       <h5>
         My interest in programming began when I created my website focused on startups in the tech industry. I love technology and it's latest developments.
-        With strong problem-solving skills and my background in customer experience I'm passionate about creating high performance projects with clean, beautiful code and high-end customer experience.
-        I love spending time with my family I have five children, I enjoy traveling, photography, coffee and a great movie. 
+        With strong problem-solving skills and my background in customer experience, I'm passionate about creating high performance projects with clean, beautiful code and user-friendly.
+        I have five children and I love spending time with my family. I also enjoy traveling, photography and a great movie. 
      </h5>
      </AnimatePresence>
      </div>
